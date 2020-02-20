@@ -24,6 +24,7 @@ class ChatApp {
                 console.log('sending message:', message.serialize());
                 socket.sendMessage(message.serialize());
             });
+            this.chatList.init();
         });
 
         socket.registerMessageHandler((data) => {
