@@ -68,3 +68,8 @@ export class ChatList {
         $messageRow.get(0).scrollIntoView();
     }
 }
+
+export function promptForUsername() {
+    let username = prompt('Enter a usename');
+    return username.toLowerCase();
+}
